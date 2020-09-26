@@ -1,0 +1,36 @@
+body {
+	background: black;
+margin:0;
+}
+
+#image-box {
+   align:center;
+width:100%;
+height:100%;
+	margin:auto;
+   overflow:hidden;
+height:680px;
+}
+
+#caption-box {
+    color: #ffffff;
+    position: absolute;
+    top:50px;
+    left:50px;
+    width:30%;
+    background: #0009;
+    padding: 10px;
+    border-radius: 5px;
+    font-family:'sans-serif';
+    display:none;
+   
+}
+
+#potd {
+    //margin-top:-100px;
+   will-change:transform;
+}
+a {
+    color:#3399ff;
+    text-decoration: none;
+}
