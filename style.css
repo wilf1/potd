@@ -10,6 +10,7 @@ height:100%;
 	margin:auto;
    overflow:hidden;
 height:680px;
+
 }
 
 #caption-box {
@@ -29,6 +30,7 @@ height:680px;
 #potd {
     //margin-top:-100px;
    will-change:transform;
+display:none;
 }
 a {
     color:#3399ff;
