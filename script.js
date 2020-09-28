@@ -82,7 +82,7 @@ function processapi ()
 	  setTimeout(() => {$('#caption-box').fadeIn(2000);}, 3000);
           realWidth = this.width;
           realHeight = this.height;
-
+	  photo.css('display', 'block');
 	window.requestAnimationFrame(step);
         });
 
@@ -133,7 +133,7 @@ function step(timestamp) {
   const elapsed = timestamp - start;
   //sigmoid = Math.pow(elapsed, 0.3) * -10;
   //sigmoid = Math.pow(elapsed + 50, 0.5) * -3 +21.21;
-  sigmoid = elapsed * -0.01;
+  sigmoid = elapsed * -0.01 * (realHeight - height)/200;
   // `Math.min()` is used here to make sure that the element stops at exactly 200px.
   //photo.css('margin-top', sigmoid + 'px');
    photo.css('transform', 'translateY(' + sigmoid + 'px)'); 
@@ -147,5 +147,4 @@ function step(timestamp) {
     window.requestAnimationFrame(step);
   }
 }
-
 
