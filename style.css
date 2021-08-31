@@ -22,7 +22,7 @@ height:680px;
     background: #0009;
     padding: 10px;
     border-radius: 5px;
-    font-family:'sans-serif';
+    font-family:'helvetica', 'sans', 'sans-serif', 'sans serif';
     display:none;
    
 }
